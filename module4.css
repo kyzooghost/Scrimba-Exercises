@@ -1,0 +1,312 @@
+/* link to the page itself */
+
+<a href="#">contact me</a>
+
+/* Compound selectors */
+
+.section-one {
+    background: black;
+    color: white;
+}
+
+.section-one .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #FFE600;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-one .btn:hover {
+    background: white;
+}
+
+.section-two a {
+    color: black;
+}
+
+.section-two .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-two .btn:hover {
+    background: #FFE600;
+    color: black;
+}
+
+/* modifier classes */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-accent {
+    background: #FFE600;
+    color: #000;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+
+
+/* Putting it all together */
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+       <title>CSS is fucking gay</title>
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="style.css">
+   </head>
+
+   <body>
+       <header class = "background-blue">
+           <h1> CSS is fucking gay </h1>
+       </header>
+
+       <section class = "section-one">
+           <h2>Section One Title.</h2>
+           <img src="images/boardwalk.png" alt="A gloomy boardwalk">
+           <p> Netus et malesuada fames ac. <a href="#">Sed cras ornare arcu</a> dui vivamus. <strong>Elementum integer enim neque</strong> volutpat ac tincidunt vitae semper. </p>
+       </section>
+
+       <section class = "section-two background-blue">
+           <h2>Section Two Title.</h2>
+           <p> Netus et malesuada fames ac. Sed cras ornare arcu dui vivamus. Elementum integer enim neque volutpat ac tincidunt vitae semper. </p>
+           <p> Lorem <a href = "#">ipsum dolor sit amet</a>, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt <strong>ut labore et dolore.</strong> </p>
+           <a href "#" class="btn"> contact us </a>
+           <a href "#" class="btn btn-white"> more info </a>
+       </section>
+   </body>
+</html>
+
+/* style.css */
+
+body {
+    max-width: 620px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    max-width: 620px;
+}
+
+
+header {
+    color: #fff;
+    padding: 20px 30px;
+}
+
+section {
+    padding: 20px 30px;
+}
+
+.background-blue {
+    background: #2E354F;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    color: #EF5839;
+    font-size: 24px;
+}
+
+.section-two {
+    color: white;
+}
+
+a {
+    color: #EF5839;
+}
+
+a:hover, a:focus {
+    color: blue;
+}
+
+.btn {
+    display: inline-block;
+    background: #EF5839;
+    color: #fff;
+    padding: 15px 35px;
+    margin-right: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-white {
+    background: #fff;
+    color: #2E354F;
+}
+
+/* Presenter solution */
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #2e354f;
+}
+
+h1,
+h2,
+strong {
+    font-weight: 900;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ef5839;
+}
+
+a {
+    color: #ef5839;
+}
+
+a:hover,
+a:focus {
+    color: #d4b44c;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.btn-accent {
+    background: #ef5839;
+    color: #fff;
+}
+
+.btn-accent:hover {
+    color: #2e354f;
+    background: #d4b44c;
+}
+
+.btn-white {
+    background: #fff;
+    color: #2e354f;
+}
+
+.btn-white:hover {
+    color: #2e354f;
+    background: #999;
+}
+
+/* Layout */
+
+header {
+    background: #2e354f;
+    padding: 45px 0;
+    color: #fff;
+}
+
+section {
+    padding: 45px 0;
+}
+
+.container {
+    width: 620px;
+    margin: 0 auto;
+    /* border: 2px solid magenta; */
+}
+
+.section-two {
+    background: #2e354f;
+    color: #fff;
+}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>We did it!</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1>CSS is a lot of fun</h1>
+            </div>
+        </header>
+
+        <section class="section-one">
+            <div class="container">
+                <h2>Section One Title.</h2>
+                <img src="images/boardwalk.png" alt="foggy boardwalk with man walking away in the distance">
+                <p>Netus et malesuada fames ac. <a href="#">Sed cras ornare arcu</a> dui vivamus. <strong>Elementum integer enim neque</strong> volutpat ac tincidunt vitae semper.</p>
+            </div>
+        </section>
+
+        <section class="section-two">
+            <div class="container">
+                <h2>Section Two Title.</h2>
+                <p>Netus et malesuada fames ac. Sed cras ornare arcu dui vivamus. Elementum integer enim neque volutpat ac tincidunt vitae semper.</p>
+                <p>Lorem <a href="#">ipsum dolor sit amet</a>, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt <strong>ut labore et dolore</strong>. </p>
+                <a href="#" class="btn btn-accent">contact us</a>
+                <a href="#" class="btn btn-white">more info</a>
+            </div>
+        </section>
+    </body>
+</html>
+
+/******************************** MODAL CHALLENGE ********************************/
+
+/* CSS for overlay */
+
+#overlay {
+  display: none;
+}
+
+/* My .JS for revealing and hiding overlay */
+
+let overlay = document.getElementById("overlay")
+let openModal = document.getElementById("open-modal");
+let closeModal = document.getElementById("close-modal");
+
+openModal.addEventListener("click", function () {
+    overlay.style.display = "block"
+})
+
+closeModal.addEventListener("click", function () {
+    overlay.style.display = "none"
+})
+
+/* Presenter .JS script for the above */
+
+document.getElementById("open-modal").addEventListener("click", function() {
+    document.getElementById("overlay").style.display = "block";
+})
+
+document.getElementById("close-modal").addEventListener("click", function() {
+    document.getElementById("overlay").style.display = "none";
+})
